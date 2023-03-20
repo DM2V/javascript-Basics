@@ -27,11 +27,11 @@ let firstLetterName = myName.charAt(0);
 console.log(firstLetterName);
 
 //- Otra variable que contenga la última letra del Apellido
-let lastLetterName = lastname.charAt(4);
+let lastLetterName = lastname.substring(lastname.length - 1, lastname.length);
 console.log(lastLetterName);
 
 //- Una cadena de texto que elimine los espacios de la variable "estudiante"
-let deleteSpace = student.trimStart().trimEnd();
+let deleteSpace = student.replace(/ /g, "")
 console.log(deleteSpace);
 
 //- Una variable booleana que diga si el Nombre está contenido en la variable "estudiante"
